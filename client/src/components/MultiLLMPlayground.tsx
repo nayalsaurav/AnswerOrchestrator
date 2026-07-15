@@ -144,7 +144,7 @@ export function MultiLLMPlayground() {
         <div className="flex items-center gap-3">
           <img src="/logo.jpg" alt="Logo" className="h-10 w-10 rounded-lg object-cover shadow-md shadow-primary/20" />
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-foreground">Multi-LLM Evaluator</h1>
+            <h1 className="text-xl font-bold tracking-tight text-foreground">AnswerOrchestrator</h1>
             <p className="text-xs text-muted-foreground">Compare LLM responses and evaluate them side-by-side</p>
           </div>
         </div>

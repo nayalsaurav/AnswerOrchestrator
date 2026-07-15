@@ -23,6 +23,7 @@ router.post("/", async (req, res) => {
           chatRequest: {
             model: p,
             messages: [{ role: "user", content: prompt }],
+            stream: false
           },
         }),
       ),

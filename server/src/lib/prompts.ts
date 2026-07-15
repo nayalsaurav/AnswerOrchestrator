@@ -4,7 +4,8 @@ You are an expert evaluator.
 The user asked:
 {{prompt}}
 
-Three AI models answered.
+Here are the responses from the three AI models:
+{{responses}}
 
 Your task is NOT to summarize.
 
