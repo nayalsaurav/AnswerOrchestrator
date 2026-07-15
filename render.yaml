@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: answer-orchestrator-server
+    env: docker
+    dockerContext: ./server
+    dockerfilePath: ./server/Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: OPENROUTER_API_KEY
+        sync: false # You will enter this key in the Render dashboard
