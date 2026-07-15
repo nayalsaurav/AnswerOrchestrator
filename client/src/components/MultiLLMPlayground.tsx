@@ -90,7 +90,8 @@ export function MultiLLMPlayground() {
 
   const comparisonMutation = useMutation({
     mutationFn: async (promptText: string) => {
-      const response = await fetch("/api/v1/chat", {
+      const backendUrl = import.meta.env.VITE_API_URL || ""
+      const response = await fetch(`${backendUrl}/api/v1/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: promptText }),
